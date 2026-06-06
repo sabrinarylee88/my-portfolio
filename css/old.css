@@ -1,0 +1,838 @@
+/*
+/* ============================================
+   BASE — applies to every page
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+  color: #111;
+}
+
+
+/* ============================================
+   SPLASH PAGE
+   ============================================ */
+
+body.splash {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* The video fills the whole screen like wallpaper */
+body.splash video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* A dark layer sits on top of the video to make text readable */
+body.splash::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* The title and button float above everything */
+.splash-content {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  gap: 32px;
+}
+
+.splash-content h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  font-weight: normal;
+}
+
+.enter-button {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.enter-button:hover {
+  background: white;
+  color: black;
+}
+
+/* ============================================
+   SPLASH LOCATION TAG
+   ============================================ */
+
+.splash-location {
+  position: fixed;
+  top: 40px;
+  right: 48px;
+  z-index: 2;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.location-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+  display: inline-block;
+}
+
+
+/* ============================================
+   HOME + ARTICLES PAGES
+   ============================================ */
+
+body.page nav {
+  padding: 28px 48px;
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid #eee;
+}
+
+body.page nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+body.page nav a:hover {
+  text-decoration: underline;
+}
+
+body.page main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 80px;
+}
+
+/* Photo on the left, text on the right */
+.about-section {
+  display: flex;
+  gap: 56px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+/*.about-section img {
+  width: 290px;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+  */
+.about-section {
+  display: flex;
+  gap: 56px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+
+.about-text {
+  max-width: 500px;
+  margin-left: auto;
+  text-align: right;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+
+.photo-main {
+  width: 240px;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+/*.photo-main-2 {
+  width: 270px;
+  flex-shrink: 0;
+  border-radius: 4px;
+}*/
+
+.photo-main-2 {
+  width: 270px;
+  border-radius: 4px;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  z-index: 2;
+}
+
+.cluster-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+.cluster-text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  max-width: 380px;
+  margin-top: 250px;
+}
+
+.photo-cluster {
+  position: relative;
+  width: 480px;
+  height: 480px;
+  flex-shrink: 0;
+}
+
+.photo-cluster img {
+  position: absolute;
+  border-radius: 4px;
+}
+
+.photo-two {
+  width: 270px;
+  top: 120px;
+  right: 300px;
+  z-index: 1;
+}
+
+.photo-three {
+  width: 300px;
+  top: 130px;
+  right: -70px;
+  z-index: 2;
+}
+
+.photo-four {
+  width: 200px;
+  top: 300px;
+  right: 70px;
+  z-index: 3;
+}
+
+.cluster-section-2 {
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 60px;
+  width: 70%;
+}
+
+.cluster-text-2 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  max-width: 380px;
+  margin-bottom: 24px;
+}
+
+.photo-five {
+  width: 80%;
+  border-radius: 4px;
+  bottom: -100px;
+  display: block;
+}
+
+.photo-six {
+  width: 300px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -70px;
+  right: -250px;
+  z-index: 2;
+}
+
+.cluster-section-3 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 200px;
+  margin-bottom: 60px;
+}
+
+.cluster-text-3 {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  max-width: 220px;
+  margin-top: 200px;
+  margin-left: auto;
+}
+
+.photo-cluster-3 {
+  position: relative;
+  width: 480px;
+  height: 480px;
+}
+
+.photo-cluster-3 img {
+  position: absolute;
+  border-radius: 4px;
+}
+
+.photo-seven {
+  width: 300px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.photo-eight {
+  width: 300px;
+  top: 60px;
+  left: 250px;
+  z-index: 2;
+}
+
+.photo-eight-a {
+  width: 300px;
+  top: 200px;
+  left: 100px;
+  z-index: 3;
+}
+
+.cluster-section-4 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.photo-cluster-4 {
+  position: relative;
+  width: 520px;
+  height: 580px;
+  flex-shrink: 0;
+}
+
+.photo-cluster-4 img {
+  position: absolute;
+  border-radius: 4px;
+}
+
+.photo-nine {
+  width: 250px;
+  top: 0;
+  left: 20px;
+  z-index: 1;
+}
+
+.photo-ten {
+  width: 200px;
+  top: 40px;
+  left: 220px;
+  z-index: 2;
+}
+
+.photo-eleven {
+  width: 270px;
+  top: 300px;
+  left: 100px;
+  z-index: 3;
+}
+
+.photo-twelve {
+  width: 280px;
+  top: 150px;
+  right: -500px;
+  z-index: 4;
+}
+
+.cluster-text-4 {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  max-width: 380px;
+  margin-top: 300px;
+}
+
+.cluster-section-5 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.cluster-text-5 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  max-width: 220px;
+  margin-top: 200px;
+}
+
+.photo-cluster-5 {
+  position: relative;
+  width: 520px;
+  height: 580px;
+  flex-shrink: 0;
+}
+
+.photo-cluster-5 img {
+  position: absolute;
+  border-radius: 4px;
+}
+
+.photo-thirteen {
+  width: 280px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.photo-fourteen {
+  width: 300px;
+  top: 20px;
+  left: 200px;
+  z-index: 2;
+}
+
+/* ============================================
+   CLUSTER 6 — scattered layout, text right
+   ============================================ */
+
+.cluster-section-6 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+.photo-cluster-6 {
+  position: relative;
+  width: 560px;
+  height: 680px;
+  flex-shrink: 0;
+}
+
+.photo-cluster-6 img {
+  position: absolute;
+  border-radius: 4px;
+}
+
+.photo-fifteen {
+  width: 260px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.photo-sixteen {
+  width: 300px;
+  top: 20px;
+  left: 240px;
+  z-index: 2;
+}
+
+.photo-seventeen {
+  width: 280px;
+  top: 200px;
+  left: 60px;
+  z-index: 3;
+}
+
+.photo-eighteen {
+  width: 240px;
+  top: 180px;
+  left: 300px;
+  z-index: 4;
+}
+
+.photo-nineteen {
+  width: 320px;
+  top: 400px;
+  left: 100px;
+  z-index: 5;
+}
+
+.cluster-text-6 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  max-width: 220px;
+  margin-top: 80px;
+}
+
+/* ============================================
+   CLUSTER 7 — centred image with corner overlap
+   ============================================ */
+
+.cluster-section-7 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.photo-cluster-7 {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  flex-shrink: 0;
+}
+
+.photo-twenty {
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.photo-twenty-one {
+  width: 220px;
+  top: 260px;
+  right: 0;
+  z-index: 2;
+}
+
+.cluster-text-7 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  max-width: 220px;
+  margin-top: 80px;
+}
+
+/* ============================================
+   CLUSTER 8 — text left, photos right
+   ============================================ */
+
+.cluster-section-8 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.cluster-text-8 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  max-width: 220px;
+  margin-top: 80px;
+}
+
+.photo-cluster-8 {
+  position: relative;
+  width: 560px;
+  height: 620px;
+  flex-shrink: 0;
+}
+
+.photo-cluster-8 img {
+  position: absolute;
+  border-radius: 4px;
+}
+
+.photo-twenty-two {
+  width: 280px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.photo-twenty-three {
+  width: 260px;
+  top: 30px;
+  left: 260px;
+  z-index: 2;
+}
+
+.photo-twenty-four {
+  width: 300px;
+  top: 260px;
+  left: 40px;
+  z-index: 3;
+}
+
+.photo-twenty-five {
+  width: 250px;
+  top: 280px;
+  left: 280px;
+  z-index: 4;
+}
+
+.cluster-section-9 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+
+.photo-cluster-9 {
+  position: relative;
+  width: 520px;
+  height: 420px;
+  flex-shrink: 0;
+}
+
+.photo-cluster-9 img {
+  position: absolute;
+  border-radius: 4px;
+}
+
+.photo-twenty-six {
+  width: 320px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.photo-twenty-seven {
+  width: 280px;
+  top: 80px;
+  left: 220px;
+  z-index: 2;
+}
+
+.cluster-text-9 {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  max-width: 220px;
+  margin-top: 80px;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+footer {
+  border-top: 1px solid #eee;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-credit {
+  font-size: 14px;
+  color: #aaa;
+  letter-spacing: 0.05em;
+}
+
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+
+.contact-section {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 0 80px;
+}
+
+.contact-heading {
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.contact-subtext {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 48px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: #111;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #111;
+  outline: none;
+  background: transparent;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 1px solid #111;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.submit-button {
+  align-self: flex-start;
+  background: none;
+  border: 1px solid #111;
+  padding: 12px 40px;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.submit-button:hover {
+  background: #111;
+  color: white;
+}
+
+/* ============================================
+   ARTICLES PAGE
+   ============================================ */
+
+.articles-header {
+  margin-bottom: 60px;
+}
+
+.articles-header h1 {
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.articles-header p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-item {
+  display: block;
+  text-decoration: none;
+  color: #111;
+  padding: 40px 0;
+  border-top: 1px solid #eee;
+}
+
+.article-item:last-child {
+  border-bottom: 1px solid #eee;
+}
+
+.article-item:hover h2 {
+  text-decoration: underline;
+}
+
+.article-tag {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #aaa;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.article-item h2 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.article-item p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  max-width: 600px;
+  margin-bottom: 16px;
+}
+
+.article-link {
+  font-size: 13px;
+  color: #111;
+  letter-spacing: 0.05em;
+}

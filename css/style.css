@@ -1,0 +1,126 @@
+/*
+/* ============================================
+   BASE — applies to every page
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+  color: #111;
+}
+
+
+/* ============================================
+   SPLASH PAGE
+   ============================================ */
+
+body.splash {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* The video fills the whole screen like wallpaper */
+body.splash video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* A dark layer sits on top of the video to make text readable */
+body.splash::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* The title and button float above everything */
+.splash-content {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  gap: 32px;
+}
+
+.splash-content h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  font-weight: normal;
+}
+
+.enter-button {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.enter-button:hover {
+  background: white;
+  color: black;
+}
+
+/* ============================================
+   SPLASH LOCATION TAG
+   ============================================ */
+
+.splash-location {
+  position: fixed;
+  top: 40px;
+  right: 48px;
+  z-index: 2;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.location-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+  display: inline-block;
+}
+
+body.page nav {
+  padding: 28px 48px;
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid #eee;
+}
+
+body.page nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+body.page nav a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,79 @@
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+
+.contact-section {
+  max-width: 480px;
+  margin: 100px auto;
+  padding: 0 40px;
+}
+
+.contact-subtext {
+  font-size: 28px;
+  font-weight: normal;
+  color: #111;
+  margin-bottom: 48px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #aaa;
+  text-transform: lowercase;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: #111;
+  outline: none;
+  background: transparent;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 1px solid #111;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #ccc;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.submit-button {
+  align-self: flex-start;
+  background: none;
+  border: 1px solid #111;
+  padding: 12px 40px;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  font-family: sans-serif;
+}
+
+.submit-button:hover {
+  background: #111;
+  color: white;
+}

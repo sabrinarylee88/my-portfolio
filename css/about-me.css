@@ -1,0 +1,473 @@
+/* ============================================
+   ABOUT-ME PAGE
+   ============================================ */
+
+.about-main {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 60px;
+}
+
+.about-main p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+/* ============================================
+   SECTION 1 — Intro
+   ============================================ */
+
+.s1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 120px;
+}
+
+.s1-photo-main {
+  width: 260px;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+
+.s1-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.s1-text p {
+  margin-bottom: 20px;
+}
+
+.s1-photo-2 {
+  width: 280px;
+  border-radius: 3px;
+  align-self: flex-end;
+}
+
+.s1-caption p {
+  margin-bottom: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+
+/* ============================================
+   SECTION 2 — Singapore & travel
+   ============================================ */
+
+.s2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 60px;
+  min-height: 600px;
+}
+
+.s2-left {
+  width: 340px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 40px;
+}
+
+.s2-photos {
+  position: relative;
+  flex: 1;
+  height: 600px;
+}
+
+.s2-photo-3 {
+  position: absolute;
+  width: 300px;
+  top: 0;
+  left: 60px;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.s2-photo-4 {
+  position: absolute;
+  width: 240px;
+  top: 80px;
+  left: 220px;
+  z-index: 2;
+  border-radius: 3px;
+}
+
+.s2-photo-5 {
+  position: absolute;
+  width: 220px;
+  top: 260px;
+  left: 140px;
+  z-index: 3;
+  border-radius: 3px;
+}
+
+
+/* ============================================
+   SECTION 3 — Film colors
+   ============================================ */
+
+.s3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 60px;
+  min-height: 520px;
+}
+
+.s3-photos {
+  position: relative;
+  width: 560px;
+  height: 480px;
+  flex-shrink: 0;
+}
+
+.s3-photo-6 {
+  position: absolute;
+  width: 420px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.s3-photo-7 {
+  position: absolute;
+  width: 220px;
+  top: 260px;
+  left: 260px;
+  z-index: 2;
+  border-radius: 3px;
+}
+
+.s3-text {
+  padding-top: 40px;
+  max-width: 280px;
+}
+
+
+/* ============================================
+   SECTION 4 — New York arrival
+   ============================================ */
+
+.s4 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 60px;
+  min-height: 640px;
+}
+
+.s4-photos {
+  position: relative;
+  width: 480px;
+  height: 600px;
+  flex-shrink: 0;
+}
+
+.s4-photos img {
+  position: absolute;
+  border-radius: 3px;
+}
+
+.s4-photo-8 {
+  width: 280px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.s4-photo-9 {
+  width: 240px;
+  top: 60px;
+  left: 220px;
+  z-index: 2;
+}
+
+.s4-photo-10 {
+  width: 260px;
+  top: 340px;
+  left: 40px;
+  z-index: 3;
+}
+
+.s4-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 20px;
+}
+
+.s4-text-a {
+  font-size: 15px;
+}
+
+.s4-text-b p,
+.s4-text-c p {
+  margin-bottom: 12px;
+}
+
+
+/* ============================================
+   SECTION 5 — Macdougal Street
+   ============================================ */
+
+.s5 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 60px;
+  min-height: 580px;
+}
+
+.s5-text {
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 40px;
+}
+
+.s5-photos {
+  position: relative;
+  flex: 1;
+  height: 560px;
+}
+
+.s5-photo-10 {
+  position: absolute;
+  width: 360px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.s5-photo-11 {
+  position: absolute;
+  width: 220px;
+  top: 120px;
+  right: 220px;
+  z-index: 2;
+  border-radius: 3px;
+}
+
+.s5-photo-12 {
+  position: absolute;
+  width: 220px;
+  top: 120px;
+  left: 100px;
+  z-index: 2;
+  border-radius: 3px;
+}
+
+
+/* ============================================
+   SECTION 6 — Graduation & leaving
+   ============================================ */
+
+.s6 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 60px;
+  min-height: 600px;
+}
+
+.s6-photos {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.s6-photo-12 {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.s6-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 20px;
+}
+
+.s6-text-main p {
+  margin-bottom: 20px;
+}
+
+.s6-text-drift-right {
+  align-self: flex-end;
+  max-width: 320px;
+}
+
+.s6-text-drift-left {
+  align-self: flex-start;
+  max-width: 320px;
+  padding-left: 40px;
+}
+
+
+/* ============================================
+   SECTION 7 — Slow travel
+   ============================================ */
+
+.s7 {
+  position: relative;
+  min-height: 620px;
+  margin-bottom: 60px;
+}
+
+.s7-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 240px;
+  z-index: 3;
+}
+
+.s7-photos {
+  position: relative;
+  height: 600px;
+}
+
+.s7-photo-14 {
+  position: absolute;
+  width: 380px;
+  top: 60px;
+  right: 0;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.s7-photo-15 {
+  position: absolute;
+  width: 280px;
+  top: 240px;
+  right: 240px;
+  z-index: 2;
+  border-radius: 3px;
+}
+
+.s7-photo-16 {
+  position: absolute;
+  width: 240px;
+  top: 340px;
+  right: 20px;
+  z-index: 3;
+  border-radius: 3px;
+}
+
+
+/* ============================================
+   SECTION 8 — Shanghai
+   ============================================ */
+
+.s8 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 60px;
+  min-height: 580px;
+}
+
+.s8-photos {
+  position: relative;
+  width: 480px;
+  height: 540px;
+  flex-shrink: 0;
+}
+
+.s8-photos img {
+  position: absolute;
+  border-radius: 3px;
+}
+
+.s8-photo-17 {
+  width: 340px;
+  top: 60px;
+  left: 60px;
+  z-index: 1;
+}
+
+.s8-photo-18 {
+  width: 200px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.s8-photo-19 {
+  width: 220px;
+  top: 360px;
+  left: 220px;
+  z-index: 3;
+}
+
+.s8-text {
+  flex: 1;
+  padding-top: 60px;
+  max-width: 300px;
+}
+
+.s8-text p {
+  margin-bottom: 24px;
+}
+
+
+/* ============================================
+   SECTION 9 — Closing
+   ============================================ */
+
+.s9 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 160px;
+  min-height: 400px;
+}
+
+.s9-photos {
+  position: relative;
+  width: 480px;
+  height: 360px;
+  flex-shrink: 0;
+}
+
+.s9-photo-20 {
+  position: absolute;
+  width: 300px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.s9-photo-21 {
+  position: absolute;
+  width: 260px;
+  top: 60px;
+  left: 200px;
+  z-index: 2;
+  border-radius: 3px;
+}
+
+.s9-text {
+  flex: 1;
+  padding-top: 40px;
+  max-width: 280px;
+}
+
+.s9-text p {
+  margin-bottom: 20px;
+}

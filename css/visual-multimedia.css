@@ -1,0 +1,157 @@
+/* ============================================
+   VISUAL MULTIMEDIA PAGE
+   ============================================ */
+
+.vm-main {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 60px;
+}
+
+.vm-main p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.vm-quote {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.vm-citation {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+/* ============================================
+   SECTION 1 — Berger intro
+   ============================================ */
+
+.vm-s1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 100px;
+  min-height: 520px;
+}
+
+.vm-s1-photos {
+  position: relative;
+  width: 480px;
+  height: 500px;
+  flex-shrink: 0;
+}
+
+.vm-photo-1 {
+  position: absolute;
+  width: 380px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.vm-photo-2 {
+  position: absolute;
+  width: 280px;
+  top: 240px;
+  left: 180px;
+  z-index: 2;
+  border-radius: 3px;
+}
+
+.vm-s1-text {
+  padding-top: 60px;
+  max-width: 320px;
+}
+
+
+/* ============================================
+   SECTION 2 — Second quote
+   ============================================ */
+
+.vm-s2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.vm-s2-text {
+  padding-top: 40px;
+  max-width: 280px;
+  flex-shrink: 0;
+}
+
+.vm-photo-3 {
+  width: 400px;
+  border-radius: 3px;
+}
+
+
+/* ============================================
+   SECTION 3 — Large photo cluster, two quotes
+   ============================================ */
+
+.vm-s3 {
+  position: relative;
+  margin-bottom: 100px;
+  min-height: 780px;
+}
+
+.vm-s3-top-text {
+  max-width: 340px;
+  margin-bottom: 40px;
+}
+
+.vm-s3-photos {
+  position: relative;
+  height: 620px;
+}
+
+.vm-photo-4 {
+  position: absolute;
+  width: 560px;
+  top: 0;
+  left: 60px;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.vm-photo-5 {
+  position: absolute;
+  width: 340px;
+  top: 380px;
+  left: 300px;
+  z-index: 2;
+  border-radius: 3px;
+}
+
+.vm-s3-side-text {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  max-width: 240px;
+  z-index: 3;
+}
+
+
+/* ============================================
+   SECTION 4 — Final centered photo
+   ============================================ */
+
+.vm-s4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+}
+
+.vm-photo-6 {
+  width: 560px;
+  border-radius: 3px;
+}
