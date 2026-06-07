@@ -43,15 +43,19 @@
   margin-bottom: 20px;
 }
 
+/* aboutme-2: moved 280px left, 70px lower */
 .s1-photo-2 {
   width: 280px;
   border-radius: 3px;
   align-self: flex-end;
+  margin-right: 280px;
+  margin-top: 30px;
 }
 
+/* caption text: black, not grey */
 .s1-caption p {
   margin-bottom: 8px;
-  color: #555;
+  color: #111;
   font-size: 14px;
 }
 
@@ -64,7 +68,7 @@
   display: flex;
   align-items: flex-start;
   gap: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   min-height: 600px;
 }
 
@@ -81,30 +85,33 @@
   position: relative;
   flex: 1;
   height: 600px;
+  overflow: visible;
 }
 
 .s2-photo-3 {
   position: absolute;
   width: 300px;
-  top: 0;
+  top: -60px;
   left: 60px;
   z-index: 1;
   border-radius: 3px;
 }
 
+/* aboutme-4: moved 100px right */
 .s2-photo-4 {
   position: absolute;
   width: 240px;
   top: 80px;
-  left: 220px;
+  left: 320px;
   z-index: 2;
   border-radius: 3px;
 }
 
+/* aboutme-5: 50% bigger (220 * 1.5 = 330px) */
 .s2-photo-5 {
   position: absolute;
-  width: 220px;
-  top: 260px;
+  width: 280px;
+  top: 230px;
   left: 140px;
   z-index: 3;
   border-radius: 3px;
@@ -119,6 +126,7 @@
   display: flex;
   align-items: flex-start;
   gap: 60px;
+  margin-top: 100px;
   margin-bottom: 60px;
   min-height: 520px;
 }
@@ -130,20 +138,22 @@
   flex-shrink: 0;
 }
 
+/* aboutme-6: 50% bigger (420 * 1.5 = 630px) */
 .s3-photo-6 {
   position: absolute;
-  width: 420px;
-  top: 0;
+  width: 580px;
+  top: 50px;
   left: 0;
   z-index: 1;
   border-radius: 3px;
 }
 
+/* aboutme-7: 40% bigger (220 * 1.4 = 308px), 150px right, 100px down */
 .s3-photo-7 {
   position: absolute;
-  width: 220px;
-  top: 260px;
-  left: 260px;
+  width: 308px;
+  top: 360px;
+  left: 410px;
   z-index: 2;
   border-radius: 3px;
 }
@@ -162,7 +172,8 @@
   display: flex;
   align-items: flex-start;
   gap: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
+  margin-top: 150px;
   min-height: 640px;
 }
 
@@ -192,10 +203,11 @@
   z-index: 2;
 }
 
+/* aboutme-10: 75px right, 30% bigger (260 * 1.3 = 338px) */
 .s4-photo-10 {
-  width: 260px;
+  width: 290px;
   top: 340px;
-  left: 40px;
+  left: 115px;
   z-index: 3;
 }
 
@@ -225,6 +237,7 @@
   display: flex;
   align-items: flex-start;
   gap: 60px;
+  margin-top: 0px;
   margin-bottom: 60px;
   min-height: 580px;
 }
@@ -253,21 +266,23 @@
   border-radius: 3px;
 }
 
+/* aboutme-11: 100% bigger (220 * 2 = 440px), 100px right, 75px up */
 .s5-photo-11 {
   position: absolute;
-  width: 220px;
-  top: 120px;
-  right: 220px;
+  width: 400px;
+  top: 45px;
+  left: 200px;
   z-index: 2;
   border-radius: 3px;
 }
 
+/* aboutme-12: over aboutme-11 */
 .s5-photo-12 {
   position: absolute;
-  width: 220px;
-  top: 120px;
-  left: 100px;
-  z-index: 2;
+  width: 260px;
+  top: 250px;
+  left: 0px;
+  z-index: 3;
   border-radius: 3px;
 }
 
@@ -280,7 +295,7 @@
   display: flex;
   align-items: flex-start;
   gap: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   min-height: 600px;
 }
 
@@ -289,8 +304,9 @@
   flex-shrink: 0;
 }
 
+/* aboutme-13: 100% bigger (300 * 2 = 600px) */
 .s6-photo-12 {
-  width: 100%;
+  width: 500px;
   border-radius: 3px;
 }
 
@@ -302,19 +318,27 @@
   padding-top: 20px;
 }
 
+/* narrower text box */
+.s6-text-main {
+  max-width: 700px;
+  padding-left: 200px;
+}
+
 .s6-text-main p {
   margin-bottom: 20px;
 }
 
 .s6-text-drift-right {
-  align-self: flex-end;
+  align-self: center;
   max-width: 320px;
+  margin-top: 40px;
 }
 
 .s6-text-drift-left {
   align-self: flex-start;
   max-width: 320px;
-  padding-left: 40px;
+  padding-left: 0;
+  margin-top: 16px;
 }
 
 
@@ -322,10 +346,16 @@
    SECTION 7 — Slow travel
    ============================================ */
 
+
 .s7 {
   position: relative;
-  min-height: 620px;
+  min-height: 700px;
   margin-bottom: 60px;
+}
+
+.s7-photos {
+  position: relative;
+  height: 700px;
 }
 
 .s7-text {
@@ -336,16 +366,13 @@
   z-index: 3;
 }
 
-.s7-photos {
-  position: relative;
-  height: 600px;
-}
 
+/* aboutme-14,15,16: all 200px leftward */
 .s7-photo-14 {
   position: absolute;
-  width: 380px;
+  width: 350px;
   top: 60px;
-  right: 0;
+  right: 200px;
   z-index: 1;
   border-radius: 3px;
 }
@@ -354,7 +381,7 @@
   position: absolute;
   width: 280px;
   top: 240px;
-  right: 240px;
+  right: 440px;
   z-index: 2;
   border-radius: 3px;
 }
@@ -363,7 +390,7 @@
   position: absolute;
   width: 240px;
   top: 340px;
-  right: 20px;
+  right: 220px;
   z-index: 3;
   border-radius: 3px;
 }
@@ -377,14 +404,14 @@
   display: flex;
   align-items: flex-start;
   gap: 60px;
-  margin-bottom: 60px;
-  min-height: 580px;
+  margin-bottom: 30px;
+  min-height: 780px;
 }
 
 .s8-photos {
   position: relative;
   width: 480px;
-  height: 540px;
+  height: 780px;
   flex-shrink: 0;
 }
 
@@ -393,31 +420,35 @@
   border-radius: 3px;
 }
 
+/* aboutme-17: 30% bigger (340 * 1.3 = 442px), 100px right, 75px lower */
 .s8-photo-17 {
-  width: 340px;
-  top: 60px;
-  left: 60px;
+  width: 400px;
+  top: 135px;
+  left: 200px;
   z-index: 1;
 }
 
 .s8-photo-18 {
-  width: 200px;
+  width: 250px;
   top: 0;
   left: 0;
   z-index: 2;
 }
 
+/* aboutme-19: 300px to the right */
 .s8-photo-19 {
   width: 220px;
   top: 360px;
-  left: 220px;
+  left: 700px;
   z-index: 3;
 }
 
+/* text: 75px right, 100px lower */
 .s8-text {
   flex: 1;
-  padding-top: 60px;
-  max-width: 300px;
+  padding-top: 50px;
+  padding-left: 75px;
+  max-width: 500px;
 }
 
 .s8-text p {
@@ -453,19 +484,22 @@
   border-radius: 3px;
 }
 
+/* aboutme-21: 40% bigger (260 * 1.4 = 364px), 100px right */
 .s9-photo-21 {
   position: absolute;
-  width: 260px;
+  width: 364px;
   top: 60px;
-  left: 200px;
+  left: 250px;
   z-index: 2;
   border-radius: 3px;
 }
 
+/* text: 200px to the right */
 .s9-text {
   flex: 1;
   padding-top: 40px;
-  max-width: 280px;
+  padding-left: 150px;
+  max-width: 500px;
 }
 
 .s9-text p {
